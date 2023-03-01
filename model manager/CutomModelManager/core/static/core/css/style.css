@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80vh;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+th,
+td {
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid black;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+td:hover {
+    transform: scale(1.2);
+}
+
+/* h1 element and font style  */
+h1 {
+    font-weight: 400;
+    color: white;
+    font-family: cursive;
+    margin: 20px 0px;
+}
+
+/* h1 in b element and font style  */
+b {
+    color: deepskyblue;
+}

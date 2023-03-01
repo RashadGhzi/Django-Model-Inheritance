@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <title>Custom Manager</title>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <!-- This is default manager container -->
+    <div class="container">
+        <h1>These objects is from <b>Deafult Manager</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><b>ID</b></th>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>Gender</th>
+                    <th>Marks</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for studentInfo in studentInfo %}
+                <tr>
+                    <td>{{studentInfo.id}}</td>
+                    <td>{{studentInfo.name}}</td>
+                    <td>{{studentInfo.roll}}</td>
+                    <td>{{studentInfo.gender}}</td>
+                    <td>{{studentInfo.marks}}</td>
+                    <td>{{studentInfo.cgpa}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- This is custom StudentManager manager container -->
+    <div class="container">
+        <h1>These objects is from <b>StudentManager Custom Manager</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><b>ID</b></th>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>Gender</th>
+                    <th>Marks</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for studentManagerInfo in studentManagerInfo %}
+                <tr>
+                    <td>{{studentManagerInfo.id}}</td>
+                    <td>{{studentManagerInfo.name}}</td>
+                    <td>{{studentManagerInfo.roll}}</td>
+                    <td>{{studentManagerInfo.gender}}</td>
+                    <td>{{studentManagerInfo.marks}}</td>
+                    <td>{{studentManagerInfo.cgpa}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- This is custom StudentCGPAManager manager container -->
+    <div class="container">
+        <h1>These objects is from <b>StudentCGPAManager Custom Manager</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><b>ID</b></th>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>Gender</th>
+                    <th>Marks</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for studentCGPARange in studentCGPARange %}
+                <tr>
+                    <td>{{studentCGPARange.id}}</td>
+                    <td>{{studentCGPARange.name}}</td>
+                    <td>{{studentCGPARange.roll}}</td>
+                    <td>{{studentCGPARange.gender}}</td>
+                    <td>{{studentCGPARange.marks}}</td>
+                    <td>{{studentCGPARange.cgpa}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <!-- This is custom Marks Manager container -->
+    <div class="container">
+        <h1>These objects is from <b>StudentCGPAManager Custom Manager</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><b>ID</b></th>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>Gender</th>
+                    <th>Marks</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for studentMarks in studentMarks %}
+                <tr>
+                    <td>{{studentMarks.id}}</td>
+                    <td>{{studentMarks.name}}</td>
+                    <td>{{studentMarks.roll}}</td>
+                    <td>{{studentMarks.gender}}</td>
+                    <td>{{studentMarks.marks}}</td>
+                    <td>{{studentMarks.cgpa}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
