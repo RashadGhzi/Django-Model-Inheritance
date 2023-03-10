@@ -1,0 +1,38 @@
+{% extends "core/base.html" %} {% load static %} {% block body-content %}
+<div class="body-container">
+  <table class="custom-table">
+    <thead>
+      <tr>
+        <th><b>ID</b></th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in users %}
+      <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.username}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <table class="custom-table">
+    <thead>
+      <tr>
+        <th>Page Name</th>
+        <th>Page Category</th>
+        <th>Page Publish Date </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for page in pages %}
+      <tr>
+        <td>{{page.page_name}}</td>
+        <td>{{page.page_category}}</td>
+        <td>{{page.page_publish_date}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock body-content %}

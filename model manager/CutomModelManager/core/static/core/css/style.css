@@ -22,7 +22,7 @@ td {
     border-bottom: 1px solid white;
     border-right: 1px solid black;
     transition-property: all;
-    transition-duration: .5s;
+    transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
 
